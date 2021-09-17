@@ -11,7 +11,7 @@
 
 @keyframes loader {
   100% {
-    opacity: 0;
+    opacity: 10;
     z-index: -10;
   }
 }
@@ -112,10 +112,10 @@ body, html {
   width: 100%;
   left: 0;
   top: 0;
-  /* background-color: rgba(255, 255, 255, 0.90);  */
+  background-color: rgba(255, 255, 255, 0.90);
   /*animation: loader 0.01s; */
-  animation: loader 3s;
-  animation-delay: 1.75s;
+  animation: loader 5s;
+  animation-delay: 1s;
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
