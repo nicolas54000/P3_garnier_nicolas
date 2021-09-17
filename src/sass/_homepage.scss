@@ -4,9 +4,10 @@
   width: 100%;
   left: 0;
   top: 0;
-  /* background-color: rgba(255, 255, 255, 0.90);  */
+  /* page en transparance  */
+  background-color: rgba(255, 255, 255, 0.90);
   /*animation: loader 0.01s; */
-  animation: loader 3s;
+  animation: loader 1s;
   animation-delay: 1.75s;
   animation-fill-mode: both;
   z-index: 10000;
@@ -81,6 +82,8 @@
   }
 }
 
+/*  bouton fonctionnement **** */
+
 .tuto {
   padding: ( $appPadding + 1rem ) $appPadding;
 
@@ -105,13 +108,12 @@
     margin: 1rem 0 1rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
-   background-color: $couleur-resto;
-
+    background-color: $couleur-resto;
 
     display: flex;
     position: relative;
 
-    /* ng******************/
+
   &:hover
   {
     background-color: $couleur-hover;
@@ -162,10 +164,6 @@
 .restaurants {
   background-color: $couleur-resto;
   padding: ($appPadding + 1rem) $appPadding;
-
-  &__title {
-
-  }
 }
 
 .cards {

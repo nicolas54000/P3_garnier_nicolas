@@ -11,8 +11,17 @@
 
 @keyframes loader {
   100% {
-    opacity: 10;
+    opacity: 0;
     z-index: -10;
+    animation-delay: 2s;
+  }
+  60% {
+    opacity: 0.3;
+    animation-delay: 2s;
+  }
+  20% {
+    opacity: 0.7;
+    z-index: -0;
   }
 }
 
@@ -112,10 +121,11 @@ body, html {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.90);
+  /* page en transparance  */
+  background-color: rgba(255, 255, 255, 0.9);
   /*animation: loader 0.01s; */
-  animation: loader 5s;
-  animation-delay: 1s;
+  animation: loader 1s;
+  animation-delay: 1.75s;
   animation-fill-mode: both;
   z-index: 10000;
   display: flex;
@@ -198,14 +208,10 @@ body, html {
 
 .hero__btn:hover {
   /*background-color: white; */
-  box-shadow: 0.25rem 0.25rem 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0.25rem 0.25rem 30px rgba(0, 0, 0, 0.5);
 }
 
-.hero__btn a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/*  bouton fonctionnement **** */
 .tuto {
   padding: 2rem 1rem;
 }
@@ -235,7 +241,6 @@ body, html {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
-  /* ng******************/
 }
 
 .tuto__step:hover {
@@ -627,12 +632,7 @@ body, html {
 
 .commandBtn:hover {
   /*background-color: white; */
-  box-shadow: 0.25rem 0.25rem 20px rgba(0, 0, 0, 0.5);
-}
-
-.commandBtn a {
-  text-decoration: none;
-  color: inherit;
+  box-shadow: 0.25rem 0.25rem 30px rgba(0, 0, 0, 0.5);
 }
 
 /* @use "sass:color"; */
