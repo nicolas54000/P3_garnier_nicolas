@@ -7,13 +7,15 @@
   /* page en transparance  */
   background-color: rgba(255, 255, 255, 0.90);
   /*animation: loader 0.01s; */
-  animation: loader 1s;
+  animation-name: loader;
   animation-delay: 1.75s;
+  animation-duration: 3s;
   animation-fill-mode: both;
-  z-index: 10000;
+
   display:flex;
   align-items:center;
   justify-content:center;
+  z-index: 10000;
 
   &__item {
     height: 1rem;

@@ -10,18 +10,12 @@
 }
 
 @keyframes loader {
-  100% {
+  from {
+    opacity: 1;
+  }
+  to {
     opacity: 0;
     z-index: -10;
-    animation-delay: 2s;
-  }
-  60% {
-    opacity: 0.3;
-    animation-delay: 2s;
-  }
-  20% {
-    opacity: 0.7;
-    z-index: -0;
   }
 }
 
@@ -124,13 +118,14 @@ body, html {
   /* page en transparance  */
   background-color: rgba(255, 255, 255, 0.9);
   /*animation: loader 0.01s; */
-  animation: loader 1s;
+  animation-name: loader;
   animation-delay: 1.75s;
+  animation-duration: 3s;
   animation-fill-mode: both;
-  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 10000;
 }
 
 .loader__item {
